@@ -7,7 +7,16 @@ using sys = Cosmos.System;
 
 namespace tinv1.command
 {
-    internal class command
+    public class command
     {
+        public readonly string name;
+        public command(string name) 
+        {
+            this.name = name;
+        }
+        public virtual string Execute(string[] args)
+        {
+            return"";
+        }
     }
 }
